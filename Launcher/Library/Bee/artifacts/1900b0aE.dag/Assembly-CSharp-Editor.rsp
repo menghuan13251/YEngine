@@ -383,11 +383,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Editor/AboutWindow.cs"
-"Assets/Editor/CopyAOTAssemblies.cs"
-"Assets/Editor/FolderColorizer.cs"
-"Assets/Editor/SceneDropdownToolbar.cs"
-"Assets/Editor/YEngineBuilder.cs"
+"Assets/Editor/Tool/About/AboutWindow.cs"
+"Assets/Editor/Tool/AutoAtlasGenerator.cs"
+"Assets/Editor/Tool/BuildTool/YEngineBuilder.cs"
+"Assets/Editor/Tool/CopyAOTAssemblies.cs"
+"Assets/Editor/Tool/FolderTool/FolderColorizer.cs"
+"Assets/Editor/Tool/SceneTool/SceneDropdownToolbar.cs"
 -langversion:9.0
 /deterministic
 /optimize+

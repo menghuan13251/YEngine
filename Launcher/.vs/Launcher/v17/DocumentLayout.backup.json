@@ -1,88 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\unity\\YEngineLite\\Launcher\\",
+  "WorkspaceRootPath": "E:\\unity\\YEngine\\Launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|e:\\unity\\yenginelite\\launcher\\assets\\scripts\\hotfix\\core\\yengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\core\\yengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|e:\\unity\\yengine\\launcher\\assets\\editor\\tool\\buildtool\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\tool\\buildtool\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|e:\\unity\\yengine\\launcher\\assets\\editor\\tool\\about\\aboutwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\tool\\about\\aboutwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\hotfix\\hotfixentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\hotfixentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|e:\\unity\\yengine\\launcher\\assets\\editor\\tool\\autoatlasgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\tool\\autoatlasgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\hotfix\\gameentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\gameentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\aot\\unitywebrequestextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\unitywebrequestextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\aot\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\aot\\jsonstructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\jsonstructs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\aot\\hotfixstub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\hotfixstub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\aot\\frameworkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\frameworkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\unity\\yenginelite\\launcher\\assets\\scripts\\aot\\asyncoperationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\aot\\asyncoperationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\editor\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\editor\\scenedropdowntoolbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\scenedropdowntoolbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\editor\\foldercolorizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\foldercolorizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\editor\\copyaotassemblies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\copyaotassemblies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\editor\\aboutwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\aboutwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\hybridclrgenerate\\link.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|solutionrelative:assets\\hybridclrgenerate\\link.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\hybridclrgenerate\\aotgenericreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|solutionrelative:assets\\hybridclrgenerate\\aotgenericreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngineLite\\Launcher\\assets\\scripts\\hotfix\\ui\\aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\ui\\aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Launcher\\Assets\\Editor\\SceneManagerToolbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\unity\\Launcher\\Assets\\Editor\\EditorEnhancements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|e:\\unity\\yengine\\launcher\\assets\\editor\\tool\\copyaotassemblies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\tool\\copyaotassemblies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -92,260 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrameworkConfig.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\FrameworkConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\FrameworkConfig.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\FrameworkConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\FrameworkConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AboutWindow.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\About\\AboutWindow.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\Tool\\About\\AboutWindow.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\About\\AboutWindow.cs",
+              "RelativeToolTip": "Assets\\Editor\\Tool\\About\\AboutWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:02:51.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HotfixStub.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\HotfixStub.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\HotfixStub.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\HotfixStub.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\HotfixStub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:03:04.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JsonStructs.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\JsonStructs.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\JsonStructs.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\JsonStructs.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\JsonStructs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:03:10.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Launcher.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\Launcher.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\Launcher.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\Launcher.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\Launcher.cs",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAcwBABAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T12:02:31.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnityWebRequestExtensions.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\UnityWebRequestExtensions.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\UnityWebRequestExtensions.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\UnityWebRequestExtensions.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\UnityWebRequestExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:06:51.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameEntry.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\GameEntry.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\GameEntry.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\GameEntry.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\GameEntry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T12:46:17.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HotfixEntry.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:15:01.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "YEngine.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T17:15:31.62Z",
+              "WhenOpened": "2025-08-17T14:37:06.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResourceManager.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAMwG0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:00:46.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AsyncOperationExtensions.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\AsyncOperationExtensions.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\AsyncOperationExtensions.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\AOT\\AsyncOperationExtensions.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AOT\\AsyncOperationExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:02:37.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SceneDropdownToolbar.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\SceneDropdownToolbar.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\SceneDropdownToolbar.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\SceneDropdownToolbar.cs",
-              "RelativeToolTip": "Assets\\Editor\\SceneDropdownToolbar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:26:56.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FolderColorizer.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\FolderColorizer.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\FolderColorizer.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\FolderColorizer.cs",
-              "RelativeToolTip": "Assets\\Editor\\FolderColorizer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T13:27:46.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CopyAOTAssemblies.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\CopyAOTAssemblies.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\CopyAOTAssemblies.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\CopyAOTAssemblies.cs",
-              "RelativeToolTip": "Assets\\Editor\\CopyAOTAssemblies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T18:01:53.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AboutWindow.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\AboutWindow.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\AboutWindow.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\AboutWindow.cs",
-              "RelativeToolTip": "Assets\\Editor\\AboutWindow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T17:26:38.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "YEngineBuilder.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\YEngineBuilder.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\YEngineBuilder.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Editor\\YEngineBuilder.cs",
-              "RelativeToolTip": "Assets\\Editor\\YEngineBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAuAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "RelativeToolTip": "Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:36:22.703Z"
+              "WhenOpened": "2025-08-17T14:24:14.543Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "link.xml",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\HybridCLRGenerate\\link.xml",
-              "RelativeDocumentMoniker": "Assets\\HybridCLRGenerate\\link.xml",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\HybridCLRGenerate\\link.xml",
-              "RelativeToolTip": "Assets\\HybridCLRGenerate\\link.xml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAhwCMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-17T09:15:30.876Z"
+              "DocumentIndex": 2,
+              "Title": "AutoAtlasGenerator.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\AutoAtlasGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\Tool\\AutoAtlasGenerator.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\AutoAtlasGenerator.cs",
+              "RelativeToolTip": "Assets\\Editor\\Tool\\AutoAtlasGenerator.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAcwKQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T14:21:25.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AOTGenericReferences.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\HybridCLRGenerate\\AOTGenericReferences.cs",
-              "RelativeDocumentMoniker": "Assets\\HybridCLRGenerate\\AOTGenericReferences.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\HybridCLRGenerate\\AOTGenericReferences.cs",
-              "RelativeToolTip": "Assets\\HybridCLRGenerate\\AOTGenericReferences.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CopyAOTAssemblies.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\CopyAOTAssemblies.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\Tool\\CopyAOTAssemblies.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\CopyAOTAssemblies.cs",
+              "RelativeToolTip": "Assets\\Editor\\Tool\\CopyAOTAssemblies.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvycAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T09:15:20.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Swap.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:04:00.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "aaa.cs",
-              "DocumentMoniker": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\UI\\aaa.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\UI\\aaa.cs",
-              "ToolTip": "E:\\unity\\YEngineLite\\Launcher\\Assets\\Scripts\\Hotfix\\UI\\aaa.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\UI\\aaa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T11:03:57.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EditorEnhancements.cs",
-              "DocumentMoniker": "E:\\unity\\Launcher\\Assets\\Editor\\EditorEnhancements.cs",
-              "RelativeDocumentMoniker": "..\\..\\Launcher\\Assets\\Editor\\EditorEnhancements.cs",
-              "ToolTip": "E:\\unity\\Launcher\\Assets\\Editor\\EditorEnhancements.cs",
-              "RelativeToolTip": "..\\..\\Launcher\\Assets\\Editor\\EditorEnhancements.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAcwCUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:13:43.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SceneManagerToolbar.cs",
-              "DocumentMoniker": "E:\\unity\\Launcher\\Assets\\Editor\\SceneManagerToolbar.cs",
-              "RelativeDocumentMoniker": "..\\..\\Launcher\\Assets\\Editor\\SceneManagerToolbar.cs",
-              "ToolTip": "E:\\unity\\Launcher\\Assets\\Editor\\SceneManagerToolbar.cs",
-              "RelativeToolTip": "..\\..\\Launcher\\Assets\\Editor\\SceneManagerToolbar.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAcwEoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T14:18:02.414Z"
+              "WhenOpened": "2025-08-17T14:21:01.904Z",
+              "EditorCaption": ""
             }
           ]
         }
