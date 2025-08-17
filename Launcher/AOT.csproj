@@ -60,12 +60,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AOT\FrameworkConfig.cs" />
     <Compile Include="Assets\Scripts\AOT\JsonStructs.cs" />
+    <Compile Include="Assets\Scripts\AOT\Stubs\HotfixEntry.cs" />
     <Compile Include="Assets\Scripts\AOT\HotfixStub.cs" />
+    <Compile Include="Assets\Scripts\AOT\Stubs\Swap.cs" />
+    <Compile Include="Assets\Scripts\AOT\Stubs\aaa.cs" />
     <Compile Include="Assets\Scripts\AOT\Launcher.cs" />
     <Compile Include="Assets\Scripts\AOT\UnityWebRequestExtensions.cs" />
-    <Compile Include="Assets\Scripts\AOT\Stubs\Swap.cs" />
-    <Compile Include="Assets\Scripts\AOT\Stubs\HotfixEntry.cs" />
-    <Compile Include="Assets\Scripts\AOT\Stubs\aaa.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\AOT\AOT.asmdef" />
