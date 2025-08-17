@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1993787538
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: configs.ab
+      Dependencies: {}
+    Info_1:
+      Name: prefabs.ab
+      Dependencies:
+        Dependency_0: atlas_sprite.ab
+    Info_2:
+      Name: scenes.ab
+      Dependencies:
+        Dependency_0: atlas_sprite.ab
+    Info_3:
+      Name: atlas_sprite.ab
+      Dependencies: {}
