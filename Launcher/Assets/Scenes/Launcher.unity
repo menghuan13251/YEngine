@@ -723,6 +723,10 @@ PrefabInstance:
       propertyPath: m_ReferenceResolution.y
       value: 540
       objectReference: {fileID: 0}
+    - target: {fileID: 11452418, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: logItemFontOverride
+      value: 
+      objectReference: {fileID: 11400000, guid: fb808deaa311dab44922c8f7201670ac, type: 2}
     - target: {fileID: 22414360, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

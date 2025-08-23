@@ -1,6 +1,14 @@
 {
   "ResMapList": [
     {
+      "res": "Common",
+      "path": "Atlas/Common.spriteatlas"
+    },
+    {
+      "res": "Sprite",
+      "path": "Atlas/Sprite.spriteatlas"
+    },
+    {
       "res": "asset_map",
       "path": "Configs/asset_map.json"
     },
@@ -27,6 +35,10 @@
     {
       "res": "MainScene",
       "path": "Scenes/MainScene.unity"
+    },
+    {
+      "res": "biaoti1",
+      "path": "Atlas/Common/biaoti1.png"
     },
     {
       "res": "2021-05-26 002829",

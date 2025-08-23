@@ -1,0 +1,67 @@
+{
+  "FileList": [
+    {
+      "file": "atlas.ab",
+      "manifest": {
+        "md5": "888453be9c3f86fdb1d7c00790abc399",
+        "size": 1300
+      }
+    },
+    {
+      "file": "atlas_common.ab",
+      "manifest": {
+        "md5": "82f74adc6b8effbdee3809264fe8fa35",
+        "size": 3876
+      }
+    },
+    {
+      "file": "atlas_sprite.ab",
+      "manifest": {
+        "md5": "834e05903a317edcaed6f9223869b4fa",
+        "size": 175955
+      }
+    },
+    {
+      "file": "configs.ab",
+      "manifest": {
+        "md5": "2c129bdb5c2f334ee37f5c7c052de842",
+        "size": 2091
+      }
+    },
+    {
+      "file": "Hotfix.dll",
+      "manifest": {
+        "md5": "7dc973d5742981e27cb421e7121e1dea",
+        "size": 19456
+      }
+    },
+    {
+      "file": "prefabs.ab",
+      "manifest": {
+        "md5": "abc87cd275423d270c9ab71824f4eb82",
+        "size": 5062
+      }
+    },
+    {
+      "file": "scenes.ab",
+      "manifest": {
+        "md5": "13b0187067a25097028cd89ada9af3db",
+        "size": 79610
+      }
+    },
+    {
+      "file": "StandaloneWindows64",
+      "manifest": {
+        "md5": "a6153f5c63085f51b37c415c680cfd60",
+        "size": 1195
+      }
+    },
+    {
+      "file": "version.json",
+      "manifest": {
+        "md5": "9a923479c02995fdf8f9ccb308df7dd4",
+        "size": 1230
+      }
+    }
+  ]
+}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97db68d13fbe4cf4cb306778b35b9f30, type: 3}
   m_Name: FrameworkConfig
   m_EditorClassIdentifier: 
-  ServerUrl: http://192.168.1.37:8088/Demo/Windows64
+  ServerUrl: http://192.168.1.37:8088/hotfix/[PlatformName]
   IncludeHotfixDllInFirstPack: 1
   FirstPackABNames:
   - configs.ab

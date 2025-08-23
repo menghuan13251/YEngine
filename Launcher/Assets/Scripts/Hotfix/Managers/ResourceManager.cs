@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using Cysharp.Threading.Tasks;
 using System;
 using Newtonsoft.Json;
-
+using  UnityEngine.Networking;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -22,7 +22,7 @@ public class ResourceManager
     private Dictionary<string, AssetBundle> _abCache = new Dictionary<string, AssetBundle>();
     private Dictionary<string, string> _assetPathToABNameMap = new Dictionary<string, string>();
     private Dictionary<string, string> _resNameToPathMap = new Dictionary<string, string>();
-    
+
     private AssetBundleManifest _manifest = null;
     public void Init()
     {
@@ -32,7 +32,7 @@ public class ResourceManager
         CurrentLoadMode = LoadMode.AssetBundle;
 #endif
         if (CurrentLoadMode == LoadMode.AssetBundle)
-        { 
+        {
             LoadAssetBundleManifest();
             LoadAssetMap();
             LoadResDB();
@@ -41,7 +41,10 @@ public class ResourceManager
     private void LoadAssetBundleManifest()
     {
         // 总清单AB包的名字，就是我们在YEngineBuilder中设置的输出目录名
-        string manifestName = "HotfixOutput";
+        // [核心修正] 不再使用硬编码的字符串，而是动态获取平台名称
+        string manifestName = GetPlatformName();
+
+        Debug.Log($"[ResourceManager] 正在加载平台 '{manifestName}' 的核心清单...");
 
         // 直接调用最底层的、不带依赖处理的加载方法来加载它自己
         AssetBundle manifestAB = LoadAssetBundleFromFile(manifestName);
@@ -59,6 +62,29 @@ public class ResourceManager
         {
             Debug.LogError($"[ResourceManager] 核心清单AB包 '{manifestName}' 未找到! 依赖加载功能将失效。");
         }
+    }
+    public static string GetPlatformName()
+    {
+#if UNITY_EDITOR
+        switch (UnityEditor.EditorUserBuildSettings.activeBuildTarget)
+        {
+            case UnityEditor.BuildTarget.Android: return "Android";
+            case UnityEditor.BuildTarget.iOS: return "iOS";
+            case UnityEditor.BuildTarget.StandaloneWindows:
+            case UnityEditor.BuildTarget.StandaloneWindows64: return "StandaloneWindows64";
+            case UnityEditor.BuildTarget.StandaloneOSX: return "StandaloneOSX";
+            default: return UnityEditor.EditorUserBuildSettings.activeBuildTarget.ToString();
+        }
+#else
+        switch (Application.platform)
+        {
+            case RuntimePlatform.Android:           return "Android";
+            case RuntimePlatform.IPhonePlayer:      return "iOS";
+            case RuntimePlatform.WindowsPlayer:     return "StandaloneWindows64";
+            case RuntimePlatform.OSXPlayer:         return "StandaloneOSX";
+            default:                                return Application.platform.ToString();
+        }
+#endif
     }
     private void LoadAssetMap()
     {
@@ -137,10 +163,10 @@ public class ResourceManager
         }
 #endif
 
-        
+
         string sceneABName;
         _assetPathToABNameMap.TryGetValue(sceneFullPath, out sceneABName);
-        LoadAssetBundleWithDependencies(sceneABName); 
+        LoadAssetBundleWithDependencies(sceneABName);
 
         SceneManager.LoadScene(sceneName, mode);
     }
@@ -160,10 +186,10 @@ public class ResourceManager
             return;
         }
 #endif
-        
+
         string sceneABName;
         _assetPathToABNameMap.TryGetValue(sceneFullPath, out sceneABName);
-        await LoadAssetBundleWithDependenciesAsync(sceneABName); 
+        await LoadAssetBundleWithDependenciesAsync(sceneABName);
 
         AsyncOperation sceneOp = SceneManager.LoadSceneAsync(sceneName, mode);
         while (!sceneOp.isDone)
@@ -244,10 +270,10 @@ public class ResourceManager
         return await LoadAssetFromABAsync<T>(abName, fullProjectPath);
     }
 
-    
+
     private T LoadAssetFromAB<T>(string abName, string assetPath) where T : UnityEngine.Object
     {
-        
+
         LoadAssetBundleWithDependencies(abName);
 
         // 从缓存中获取已加载的AB包
@@ -286,27 +312,27 @@ public class ResourceManager
         LoadAssetBundleFromFileInternal(abName);
     }
 
-    
-    private AssetBundle LoadAssetBundleFromFileInternal(string abName)
-    {
-        if (string.IsNullOrEmpty(abName)) return null;
-        abName = abName.ToLower();
 
-        AssetBundle cachedAB;
-        if (_abCache.TryGetValue(abName, out cachedAB)) return cachedAB;
+    //private AssetBundle LoadAssetBundleFromFileInternal(string abName)
+    //{
+    //    if (string.IsNullOrEmpty(abName)) return null;
+    //    abName = abName.ToLower();
 
-        string finalPath = Path.Combine(Application.persistentDataPath, abName);
-        if (!File.Exists(finalPath)) finalPath = Path.Combine(Application.streamingAssetsPath, abName);
-        if (!File.Exists(finalPath)) return null;
+    //    AssetBundle cachedAB;
+    //    if (_abCache.TryGetValue(abName, out cachedAB)) return cachedAB;
 
-        AssetBundle ab = AssetBundle.LoadFromFile(finalPath);
-        if (ab != null) _abCache[abName] = ab;
-        return ab;
-    }
+    //    string finalPath = Path.Combine(Application.persistentDataPath, abName);
+    //    if (!File.Exists(finalPath)) finalPath = Path.Combine(Application.streamingAssetsPath, abName);
+    //    if (!File.Exists(finalPath)) return null;
+
+    //    AssetBundle ab = AssetBundle.LoadFromFile(finalPath);
+    //    if (ab != null) _abCache[abName] = ab;
+    //    return ab;
+    //}
 
     private async UniTask<T> LoadAssetFromABAsync<T>(string abName, string assetPath) where T : UnityEngine.Object
     {
-        
+
         await LoadAssetBundleWithDependenciesAsync(abName);
 
         AssetBundle targetAB;
@@ -347,22 +373,82 @@ public class ResourceManager
         await LoadAssetBundleFromFileInternalAsync(abName);
     }
 
+    //private AssetBundle LoadAssetBundleFromFile(string abName)
+    //{
+    //    if (string.IsNullOrEmpty(abName)) return null;
+    //    abName = abName.ToLower();
+    //    AssetBundle cachedAB;
+    //    if (_abCache.TryGetValue(abName, out cachedAB)) return cachedAB;
+
+    //    string finalPath = Path.Combine(Application.persistentDataPath, abName);
+    //    if (!File.Exists(finalPath)) finalPath = Path.Combine(Application.streamingAssetsPath, abName);
+    //    if (!File.Exists(finalPath)) return null;
+
+    //    AssetBundle ab = AssetBundle.LoadFromFile(finalPath);
+    //    if (ab != null) _abCache[abName] = ab;
+    //    return ab;
+    //}
     private AssetBundle LoadAssetBundleFromFile(string abName)
+    {
+        // 这个方法现在只是一个简单的包装
+        return LoadAssetBundleFromFileInternal(abName);
+    }
+
+    private AssetBundle LoadAssetBundleFromFileInternal(string abName)
     {
         if (string.IsNullOrEmpty(abName)) return null;
         abName = abName.ToLower();
-        AssetBundle cachedAB;
-        if (_abCache.TryGetValue(abName, out cachedAB)) return cachedAB;
 
-        string finalPath = Path.Combine(Application.persistentDataPath, abName);
-        if (!File.Exists(finalPath)) finalPath = Path.Combine(Application.streamingAssetsPath, abName);
-        if (!File.Exists(finalPath)) return null;
+        if (_abCache.TryGetValue(abName, out AssetBundle cachedAB)) return cachedAB;
 
-        AssetBundle ab = AssetBundle.LoadFromFile(finalPath);
-        if (ab != null) _abCache[abName] = ab;
-        return ab;
+        // 优先从可写目录（热更目录）加载，这里保持原样
+        string persistentPath = Path.Combine(Application.persistentDataPath, abName);
+        if (File.Exists(persistentPath))
+        {
+            AssetBundle ab = AssetBundle.LoadFromFile(persistentPath);
+            if (ab != null) _abCache[abName] = ab;
+            return ab;
+        }
+
+        // [核心修改] 当需要从 StreamingAssets 加载时，进行平台判断
+        string streamingPath = Path.Combine(Application.streamingAssetsPath, abName);
+#if UNITY_ANDROID && !UNITY_EDITOR
+        // 这是Android平台的特殊处理
+        // 我们创建一个UnityWebRequest，然后同步等待它完成
+        using (UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(streamingPath))
+        {
+            var asyncOp = www.SendWebRequest();
+            // 通过一个while循环，阻塞主线程，直到请求完成
+            // 这模拟了同步加载的行为，只在启动时发生一次，影响可接受
+            while (!asyncOp.isDone)
+            {
+                // 可以加一个超时或错误检查，但为了简单起见，这里直接等待
+            }
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                AssetBundle ab = DownloadHandlerAssetBundle.GetContent(www);
+                if (ab != null) _abCache[abName] = ab;
+                return ab;
+            }
+            else
+            {
+                // 如果加载失败，返回null，上层逻辑会报错
+                Debug.LogError($"[ResourceManager] Android StreamingAssets load failed: {www.error}, Path: {streamingPath}");
+                return null;
+            }
+        }
+#else
+        // 对于PC, Editor, iOS等其他平台，LoadFromFile可以直接工作
+        if (File.Exists(streamingPath))
+        {
+            AssetBundle ab = AssetBundle.LoadFromFile(streamingPath);
+            if (ab != null) _abCache[abName] = ab;
+            return ab;
+        }
+        return null;
+#endif
     }
-
 
     private async UniTask<AssetBundle> LoadAssetBundleFromFileInternalAsync(string abName)
     {

@@ -1,6 +1,14 @@
 {
   "AssetMapList": [
     {
+      "path": "Assets/GameRes_Hotfix/Atlas/Common.spriteatlas",
+      "abName": "atlas.ab"
+    },
+    {
+      "path": "Assets/GameRes_Hotfix/Atlas/Sprite.spriteatlas",
+      "abName": "atlas.ab"
+    },
+    {
       "path": "Assets/GameRes_Hotfix/Configs/asset_map.json",
       "abName": "configs.ab"
     },
@@ -27,6 +35,10 @@
     {
       "path": "Assets/GameRes_Hotfix/Scenes/MainScene.unity",
       "abName": "scenes.ab"
+    },
+    {
+      "path": "Assets/GameRes_Hotfix/Atlas/Common/biaoti1.png",
+      "abName": "atlas_common.ab"
     },
     {
       "path": "Assets/GameRes_Hotfix/Atlas/Sprite/2021-05-26 002829.jpg",

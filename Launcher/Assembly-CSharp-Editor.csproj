@@ -60,10 +60,10 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\Tool\BuildTool\YEngineBuilder.cs" />
     <Compile Include="Assets\Editor\Tool\FolderTool\FolderColorizer.cs" />
+    <Compile Include="Assets\Editor\Tool\AutoAtlasGenerator.cs" />
     <Compile Include="Assets\Editor\Tool\SceneTool\SceneDropdownToolbar.cs" />
     <Compile Include="Assets\Editor\Tool\About\AboutWindow.cs" />
     <Compile Include="Assets\Editor\Tool\CopyAOTAssemblies.cs" />
-    <Compile Include="Assets\Editor\Tool\AutoAtlasGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public static class UnityWebRequestExtensions
 {
-    public static UniTask<UnityWebRequest> SendWebRequestAsTask(this UnityWebRequest www, MonoBehaviour runner)
+    public static UniTask<UnityWebRequest> SendWebRequestAsTask(this UnityWebRequest www, MonoBehaviour runner, bool throwException)
     {
         var tcs = new UniTaskCompletionSource<UnityWebRequest>();
         runner.StartCoroutine(RequestCoroutine(www, tcs));

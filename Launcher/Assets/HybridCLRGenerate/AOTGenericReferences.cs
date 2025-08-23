@@ -18,15 +18,15 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 
 	// {{ AOT generic types
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetFromABAsync>d__26<object>,object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAssetFromABAsync>d__25<object>,object>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadAsync>d__17<object>,object>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<ResourceManager.<LoadSceneAsync>d__19>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>,object>
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetFromABAsync>d__26<object>,object>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAssetFromABAsync>d__25<object>,object>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadAsync>d__17<object>,object>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<ResourceManager.<LoadSceneAsync>d__19>
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>
@@ -177,20 +177,20 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 
 	public void RefMethods()
 	{
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResourceManager.<LoadSceneAsync>d__19>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResourceManager.<LoadSceneAsync>d__19&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.YieldAwaitable.Awaiter,ResourceManager.<LoadSceneAsync>d__19>(Cysharp.Threading.Tasks.YieldAwaitable.Awaiter&,ResourceManager.<LoadSceneAsync>d__19&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResourceManager.<LoadAssetFromABAsync>d__26<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResourceManager.<LoadAssetFromABAsync>d__26<object>&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,ResourceManager.<LoadAssetFromABAsync>d__25<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter&,ResourceManager.<LoadAssetFromABAsync>d__25<object>&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter<object>,ResourceManager.<LoadAsync>d__17<object>>(Cysharp.Threading.Tasks.UniTask.Awaiter<object>&,ResourceManager.<LoadAsync>d__17<object>&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.YieldAwaitable.Awaiter,ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29>(Cysharp.Threading.Tasks.YieldAwaitable.Awaiter&,ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.YieldAwaitable.Awaiter,ResourceManager.<LoadAssetFromABAsync>d__26<object>>(Cysharp.Threading.Tasks.YieldAwaitable.Awaiter&,ResourceManager.<LoadAssetFromABAsync>d__26<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27>(ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__27&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.YieldAwaitable.Awaiter,ResourceManager.<LoadAssetFromABAsync>d__25<object>>(Cysharp.Threading.Tasks.YieldAwaitable.Awaiter&,ResourceManager.<LoadAssetFromABAsync>d__25<object>&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26>(ResourceManager.<LoadAssetBundleWithDependenciesAsync>d__26&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<ResourceManager.<LoadSceneAsync>d__19>(ResourceManager.<LoadSceneAsync>d__19&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29>(ResourceManager.<LoadAssetBundleFromFileInternalAsync>d__29&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>>(ResourceManager.<LoadAssetByFullPathInternalAsync>d__22<object>&)
-		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResourceManager.<LoadAssetFromABAsync>d__26<object>>(ResourceManager.<LoadAssetFromABAsync>d__26<object>&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResourceManager.<LoadAssetFromABAsync>d__25<object>>(ResourceManager.<LoadAssetFromABAsync>d__25<object>&)
 		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<object>.Start<ResourceManager.<LoadAsync>d__17<object>>(ResourceManager.<LoadAsync>d__17<object>&)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string,Newtonsoft.Json.JsonSerializerSettings)

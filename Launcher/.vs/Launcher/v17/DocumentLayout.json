@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "E:\\unity\\YEngine\\Launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|e:\\unity\\yengine\\launcher\\assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|e:\\unity\\yengine\\launcher\\assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|e:\\unity\\yengine\\launcher\\assets\\scripts\\hotfix\\core\\yengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|E:\\unity\\YEngine\\Launcher\\assets\\editor\\tool\\buildtool\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F182B46F-0BA2-F979-F7EE-2F113AE11E5E}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\tool\\buildtool\\yenginebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\aot\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\aot\\frameworkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF0CA624-AFA5-8ED2-C7C8-19712897442C}|AOT.csproj|solutionrelative:assets\\scripts\\aot\\frameworkconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|E:\\unity\\YEngine\\Launcher\\assets\\hybridclrgenerate\\link.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4FF5CAE6-DC29-AA5D-83B1-CED2D3FADABD}|Assembly-CSharp.csproj|solutionrelative:assets\\hybridclrgenerate\\link.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\hotfix\\core\\yengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\core\\yengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|e:\\unity\\yengine\\launcher\\assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\managers\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\hotfix\\hotfixentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\hotfixentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\ui\\swap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|E:\\unity\\YEngine\\Launcher\\assets\\scripts\\hotfix\\gameentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF817125-F901-DCE7-096B-0961895B1EF0}|Hotfix.csproj|solutionrelative:assets\\scripts\\hotfix\\gameentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +46,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "FrameworkConfig.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\AOT\\FrameworkConfig.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\FrameworkConfig.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\AOT\\FrameworkConfig.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AOT\\FrameworkConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T10:22:25.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "link.xml",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\HybridCLRGenerate\\link.xml",
+              "RelativeDocumentMoniker": "Assets\\HybridCLRGenerate\\link.xml",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\HybridCLRGenerate\\link.xml",
+              "RelativeToolTip": "Assets\\HybridCLRGenerate\\link.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-21T09:28:09.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YEngineBuilder.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "RelativeToolTip": "Assets\\Editor\\Tool\\BuildTool\\YEngineBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T07:43:06.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Launcher.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\AOT\\Launcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AOT\\Launcher.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\AOT\\Launcher.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AOT\\Launcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T10:26:49.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameEntry.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\GameEntry.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\GameEntry.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\GameEntry.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\GameEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T10:26:44.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HotfixEntry.cs",
+              "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
+              "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Hotfix\\HotfixEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T10:13:10.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Swap.cs",
               "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
@@ -34,31 +130,29 @@
               "RelativeToolTip": "Assets\\Scripts\\Hotfix\\UI\\Swap.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAADwvyEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T15:16:35.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T15:16:35.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "YEngine.cs",
               "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
               "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hotfix\\Core\\YEngine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T15:16:31.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T15:16:31.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ResourceManager.cs",
               "DocumentMoniker": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
               "ToolTip": "E:\\unity\\YEngine\\Launcher\\Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Hotfix\\Managers\\ResourceManager.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAuwHMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwC4AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T15:16:07.228Z",
               "EditorCaption": ""

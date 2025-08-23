@@ -50,6 +50,15 @@
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.UnityWebRequestAssetBundleModule">
+    <type fullname="UnityEngine.Networking.DownloadHandlerAssetBundle" preserve="all" />
+    <type fullname="UnityEngine.Networking.UnityWebRequestAssetBundle" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UnityWebRequestModule">
+    <type fullname="UnityEngine.Networking.UnityWebRequest" preserve="all" />
+    <type fullname="UnityEngine.Networking.UnityWebRequest/Result" preserve="all" />
+    <type fullname="UnityEngine.Networking.UnityWebRequestAsyncOperation" preserve="all" />
+  </assembly>
   <assembly fullname="mscorlib">
     <type fullname="System.Action`1" preserve="all" />
     <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />

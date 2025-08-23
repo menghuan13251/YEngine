@@ -16,23 +16,68 @@ public class YEngineBuilder
     private const string StubBaseClassName = "HotfixStub";
     private const string AOTStubDir = "Assets/Scripts/AOT/Stubs";
     private const string HotfixResRoot = "Assets/GameRes_Hotfix";
-    private const string HotfixOutputDir = "HotfixOutput";
+    // --- 【修改点 1】: 将固定的输出目录常量修改为基础目录 ---
+    private const string HotfixOutputRoot = "HotfixOutput";
     private const string ConfigsABName = "configs.ab";
-    [MenuItem("YEngine/准备母包资源",false ,100)]
+
+    [MenuItem("YEngine/准备母包资源", false, 100)]
     public static void CopyFilesMenu()
     {
         CopyAOTAssemblies.CopyFilesMenu();
     }
-    [MenuItem("YEngine/关于YEngine",false ,0)]
+
+    [MenuItem("YEngine/关于YEngine", false, 0)]
     public static void ShowWindow()
     {
         AboutWindow.ShowWindow();
     }
-    // --- 【核心】唯一的菜单项 ---
-    [MenuItem("YEngine/---【一键打包】---",false,1000)]
-    public static void UltimateBuild()
+
+    // --- 【修改点 2】: 拆分一键打包菜单 ---
+
+    [MenuItem("YEngine/【一键打包】/Build For Windows", false, 1000)]
+    public static void UltimateBuild_Windows()
     {
-        Debug.Log("================ 开始终极一键打包流程 ================");
+        // 指定目标平台
+        BuildTarget target = BuildTarget.StandaloneWindows64;
+        // 调用核心打包逻辑
+        UltimateBuild(target);
+    }
+
+    [MenuItem("YEngine/【一键打包】/Build For Android", false, 1001)]
+    public static void UltimateBuild_Android()
+    {
+        BuildTarget target = BuildTarget.Android;
+        UltimateBuild(target);
+    }
+
+    [MenuItem("YEngine/【一键打包】/Build For Mac", false, 1002)]
+    public static void UltimateBuild_Mac()
+    {
+        BuildTarget target = BuildTarget.StandaloneOSX;
+        UltimateBuild(target);
+    }
+   
+    // --- 【修改点 3】: 修改原有的 UltimateBuild 方法，使其接受一个 BuildTarget 参数 ---
+    // 这个方法现在是私有的，作为内部核心实现
+    private static void UltimateBuild(BuildTarget buildTarget)
+    {
+        // --- 【修改点 4】: 获取平台专属的输出路径 ---
+        string outputDir = GetPlatformBuildPath(buildTarget);
+
+        Debug.Log($"================ 开始为平台 [{buildTarget}] 一键打包，输出到 [{outputDir}] ================");
+
+        // --- 【修改点 5】: 自动切换当前激活的 Build Target ---
+        if (EditorUserBuildSettings.activeBuildTarget != buildTarget)
+        {
+            Debug.Log($"正在切换激活平台到: {buildTarget}...");
+            if (!EditorUserBuildSettings.SwitchActiveBuildTarget(BuildPipeline.GetBuildTargetGroup(buildTarget), buildTarget))
+            {
+                Debug.LogError($"打包中断：切换平台到 {buildTarget} 失败！");
+                return;
+            }
+            Debug.Log("平台切换成功！");
+        }
+
         FrameworkConfig config = GetConfig();
         if (config == null) { Debug.LogError("打包中断：找不到 FrameworkConfig.asset 文件！"); return; }
 
@@ -45,11 +90,9 @@ public class YEngineBuilder
 
         try
         {
-           // DeleteAllStubScriptFiles();
-            // 步骤 1: 生成存根脚本 (先删除旧的，保证干净)
+            // DeleteAllStubScriptFiles();
             var hotfixTypes = GenerateStubs();
 
-            // 步骤 2: 执行幂等的、无损的注入操作
             if (hotfixTypes.Any())
             {
                 InjectReferences(hotfixTypes);
@@ -59,8 +102,8 @@ public class YEngineBuilder
                 Debug.LogWarning("项目中没有找到任何热更新脚本(MonoBehaviour)，跳过注入步骤。");
             }
 
-            // 步骤 3: 打包资源
-            BuildAllResources(config);
+            // --- 【修改点 6】: 将平台输出路径传递给打包方法 ---
+            BuildAllResources(config, outputDir, buildTarget);
         }
         catch (System.Exception e)
         {
@@ -68,37 +111,124 @@ public class YEngineBuilder
         }
         finally
         {
-            // 无论成功与否，都恢复用户原来的工作场景
             if (!string.IsNullOrEmpty(originalScenePath) && File.Exists(originalScenePath))
             {
                 EditorSceneManager.OpenScene(originalScenePath);
             }
-            Debug.Log("================ 终极一键打包流程结束 ================");
+            Debug.Log($"================ 平台 [{buildTarget}] 打包流程结束 ================");
         }
 
-        EditorUtility.RevealInFinder(HotfixOutputDir);
+        EditorUtility.RevealInFinder(outputDir);
     }
-   // [MenuItem("YEngine/工具/【危险】彻底删除所有存根脚本文件")]
+
+    // --- 【新增方法】: 根据BuildTarget获取平台专属的输出路径 ---
+    private static string GetPlatformBuildPath(BuildTarget target)
+    {
+        // 使用 BuildTarget.ToString() 来获取平台名称，这是最直接且与HybridCLR等工具链保持一致的方式
+        return Path.Combine(HotfixOutputRoot, target.ToString());
+    }
+
+    // ... (你原来的 DeleteAllStubScriptFiles, ClearAllStubComponentsMenu 等方法保持不变) ...
+    // ... (GenerateStubs, InjectReferences, ClearAllStubComponents, ProcessGameObject, AnalyzeComponentReferences 等方法保持不变) ...
+
+    // --- 【修改点 7】: 修改 BuildAllResources 及其调用的方法，以接收和使用平台相关的路径和Target ---
+    private static void BuildAllResources(FrameworkConfig config, string outputDir, BuildTarget buildTarget)
+    {
+        ApplyLabelsAndGenerateMaps();
+        CompileHotfixDLLs(outputDir, buildTarget);
+        BuildAllAssetBundles(outputDir, buildTarget);
+        GenerateVersionManifest(outputDir);
+        PrepareFirstPackRes(config, outputDir); // 注意：PrepareFirstPackRes也需要知道源目录
+    }
+
+    // ApplyLabelsAndGenerateMaps 方法保持不变，因为它不涉及输出路径
+
+    private static void CompileHotfixDLLs(string outputDir, BuildTarget buildTarget)
+    {
+        if (!Directory.Exists(outputDir)) Directory.CreateDirectory(outputDir);
+        // 使用传入的 buildTarget
+        HybridCLR.Editor.Commands.CompileDllCommand.CompileDll(buildTarget);
+        string hotfixDllSrcDir = Path.Combine(HybridCLR.Editor.Settings.HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir, buildTarget.ToString());
+        // 拷贝到平台专属目录
+        File.Copy(Path.Combine(hotfixDllSrcDir, "Hotfix.dll"), Path.Combine(outputDir, "Hotfix.dll"), true);
+    }
+
+    private static void BuildAllAssetBundles(string outputDir, BuildTarget buildTarget)
+    {
+        if (!Directory.Exists(outputDir)) Directory.CreateDirectory(outputDir);
+        // 使用平台专属目录和传入的 buildTarget
+        BuildPipeline.BuildAssetBundles(outputDir, BuildAssetBundleOptions.None, buildTarget);
+    }
+
+    private static void GenerateVersionManifest(string outputDir)
+    {
+        VersionManifestWrapper manifestWrapper = new VersionManifestWrapper();
+        // 扫描平台专属目录
+        foreach (var file in Directory.GetFiles(outputDir, "*", SearchOption.AllDirectories))
+        {
+            if (file.EndsWith(".manifest") || file.EndsWith(".meta") || Directory.Exists(file)) continue;
+            // 相对路径的计算基准也要变成平台专属目录
+            string relativePath = file.Substring(outputDir.Length + 1).Replace("\\", "/");
+            manifestWrapper.FileList.Add(new VersionEntry { file = relativePath, manifest = new FileManifest { md5 = GetFileMD5(file), size = new FileInfo(file).Length } });
+        }
+        // 生成到平台专属目录
+        File.WriteAllText(Path.Combine(outputDir, "version.json"), JsonConvert.SerializeObject(manifestWrapper, Formatting.Indented));
+    }
+
+    private static void PrepareFirstPackRes(FrameworkConfig config, string sourceDir)
+    {
+        string streamingAssets = Application.streamingAssetsPath;
+        if (Directory.Exists(streamingAssets)) Directory.Delete(streamingAssets, true);
+        Directory.CreateDirectory(streamingAssets);
+        // CopyAOTAssemblies 已经是基于 activeBuildTarget 工作的，这里不用改
+        CopyAOTAssemblies.CopyFiles(EditorUserBuildSettings.activeBuildTarget);
+
+        List<string> filesToCopy = new List<string>();
+        if (config.IncludeHotfixDllInFirstPack) filesToCopy.Add("Hotfix.dll");
+        filesToCopy.AddRange(config.FirstPackABNames);
+        filesToCopy.Add("version.json"); // 通常version.json也需要进首包
+
+        foreach (var fileName in filesToCopy.Distinct())
+        {
+            // 从平台专属的源目录拷贝
+            string srcPath = Path.Combine(sourceDir, fileName);
+            if (File.Exists(srcPath))
+            {
+                File.Copy(srcPath, Path.Combine(streamingAssets, fileName), true);
+            }
+            else
+            {
+                Debug.LogWarning($"[PrepareFirstPackRes] 首包文件未在输出目录中找到，已跳过: {srcPath}");
+            }
+        }
+        AssetDatabase.Refresh();
+    }
+
+    // ... (你原来的 GetHotfixTypes, GetAOTStubType, GetFriendlyTypeName, GetGameObjectPath, GetFileMD5, GetConfig 等辅助方法保持不变) ...
+
+    #region 保持不变的原有代码
+    // 为了代码的完整性，将不需要修改的方法折叠在这里
+    // 你只需将上面修改过的代码替换或合并到你现有的 YEngineBuilder.cs 中即可
+
+    [MenuItem("YEngine/清理所有存根文件", false, 500)]
+    private static void ClearAllStubComponentsMenu()
+    {
+        Debug.Log("--- 开始清理所有存根组件 ---");
+        DeleteAllStubScriptFiles();
+        ClearAllStubComponents();
+        AssetDatabase.SaveAssets();
+        Debug.Log("✅ 清理完毕！");
+    }
+
     public static void DeleteAllStubScriptFiles()
     {
         Debug.Log($"--- 准备删除存根脚本目录: {AOTStubDir} ---");
-
-        // 检查目录是否存在
         if (Directory.Exists(AOTStubDir))
         {
             try
             {
-                // 递归删除整个文件夹及其所有内容
                 Directory.Delete(AOTStubDir, true);
-
-                // Unity 的资产数据库并不知道你直接删除了文件，
-                // 我们还需要删除对应的 .meta 文件来避免错误。
-                // 一个更安全、更符合Unity工作流的方式是使用 AssetDatabase.DeleteAsset。
-                // 但因为我们删的是整个文件夹，直接删除后再刷新是最高效的。
-
-                // 强制刷新资产数据库，让Unity编辑器能正确感知到文件夹已被删除
                 AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-
                 Debug.Log($"✅ 成功删除目录及其所有内容: {AOTStubDir}");
             }
             catch (System.Exception e)
@@ -111,17 +241,6 @@ public class YEngineBuilder
             Debug.Log("目录不存在，无需删除。");
         }
     }
-    [MenuItem("YEngine/清理所有存根文件",false,500)]
-    private static void ClearAllStubComponentsMenu()
-    {
-        Debug.Log("--- 开始清理所有存根组件 ---");
-        DeleteAllStubScriptFiles();
-        ClearAllStubComponents();
-        AssetDatabase.SaveAssets();
-        Debug.Log("✅ 清理完毕！");
-    }
-
-    // ==================== 核心实现 ====================
 
     private static List<System.Type> GenerateStubs()
     {
@@ -266,15 +385,6 @@ public class {type.Name} : {StubBaseClassName}
         return fieldRefs;
     }
 
-    private static void BuildAllResources(FrameworkConfig config)
-    {
-        ApplyLabelsAndGenerateMaps();
-        CompileHotfixDLLs();
-        BuildAllAssetBundles();
-        GenerateVersionManifest();
-        PrepareFirstPackRes(config);
-    }
-
     private static void ApplyLabelsAndGenerateMaps()
     {
         foreach (string name in AssetDatabase.GetAllAssetBundleNames()) AssetDatabase.RemoveAssetBundleName(name, true);
@@ -302,7 +412,6 @@ public class {type.Name} : {StubBaseClassName}
         AssetDatabase.ImportAsset(resDBPath);
         SetLabelForPath(resDBPath, ConfigsABName, assetMap);
     }
-
     private static void SetLabelForFile(FileInfo file, Dictionary<string, string> assetMap)
     {
         if (file.Extension == ".meta" || file.Name.StartsWith(".")) return;
@@ -316,46 +425,6 @@ public class {type.Name} : {StubBaseClassName}
         AssetImporter importer = AssetImporter.GetAtPath(assetPath);
         if (importer != null) { importer.assetBundleName = abName.ToLower(); assetMap[assetPath] = abName.ToLower(); }
     }
-    private static void CompileHotfixDLLs()
-    {
-        if (!Directory.Exists(HotfixOutputDir)) Directory.CreateDirectory(HotfixOutputDir);
-        HybridCLR.Editor.Commands.CompileDllCommand.CompileDll(EditorUserBuildSettings.activeBuildTarget);
-        string hotfixDllSrcDir = Path.Combine(HybridCLR.Editor.Settings.HybridCLRSettings.Instance.hotUpdateDllCompileOutputRootDir, EditorUserBuildSettings.activeBuildTarget.ToString());
-        File.Copy(Path.Combine(hotfixDllSrcDir, "Hotfix.dll"), Path.Combine(HotfixOutputDir, "Hotfix.dll"), true);
-    }
-    private static void BuildAllAssetBundles()
-    {
-        if (!Directory.Exists(HotfixOutputDir)) Directory.CreateDirectory(HotfixOutputDir);
-        BuildPipeline.BuildAssetBundles(HotfixOutputDir, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
-    }
-    private static void GenerateVersionManifest()
-    {
-        VersionManifestWrapper manifestWrapper = new VersionManifestWrapper();
-        foreach (var file in Directory.GetFiles(HotfixOutputDir, "*", SearchOption.AllDirectories))
-        {
-            if (file.EndsWith(".manifest") || file.EndsWith(".meta") || Directory.Exists(file)) continue;
-            string relativePath = file.Substring(HotfixOutputDir.Length + 1).Replace("\\", "/");
-            manifestWrapper.FileList.Add(new VersionEntry { file = relativePath, manifest = new FileManifest { md5 = GetFileMD5(file), size = new FileInfo(file).Length } });
-        }
-        File.WriteAllText(Path.Combine(HotfixOutputDir, "version.json"), JsonConvert.SerializeObject(manifestWrapper, Formatting.Indented));
-    }
-    private static void PrepareFirstPackRes(FrameworkConfig config)
-    {
-        string streamingAssets = Application.streamingAssetsPath;
-        if (Directory.Exists(streamingAssets)) Directory.Delete(streamingAssets, true);
-        Directory.CreateDirectory(streamingAssets);
-        CopyAOTAssemblies.CopyFiles(EditorUserBuildSettings.activeBuildTarget);
-        List<string> filesToCopy = new List<string> { "HotfixOutput" };
-        if (config.IncludeHotfixDllInFirstPack) filesToCopy.Add("Hotfix.dll");
-        filesToCopy.AddRange(config.FirstPackABNames);
-        foreach (var fileName in filesToCopy.Distinct())
-        {
-            string srcPath = Path.Combine(HotfixOutputDir, fileName);
-            if (File.Exists(srcPath)) File.Copy(srcPath, Path.Combine(streamingAssets, fileName), true);
-        }
-        AssetDatabase.Refresh();
-    }
-
     private static List<System.Type> GetHotfixTypes()
     {
         var hotfixAsm = System.AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => a.GetName().Name == HotfixAssemblyName);
@@ -398,4 +467,8 @@ public class {type.Name} : {StubBaseClassName}
         if (guids.Length == 0) { Debug.LogError("找不到 FrameworkConfig.asset 文件！"); return null; }
         return AssetDatabase.LoadAssetAtPath<FrameworkConfig>(AssetDatabase.GUIDToAssetPath(guids[0]));
     }
+
+  
+
+    #endregion
 }
